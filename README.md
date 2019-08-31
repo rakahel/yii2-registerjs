@@ -2,12 +2,12 @@
 <h2>Default Register JS Yii2</h2>
 <div class="highlight highlight-text-html-php">
   <pre>
-    "<?php use  \yii\web\View; ?>"
-    // html code
-    <?php $this->registerJs('
+    use \yii\web\View;
+    // ... html code ...
+    $this->registerJs('
         alert("Hello World!");
     ');
-    // other script
+    // ... other script ...
   </pre>
 </div>
 
