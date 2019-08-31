@@ -1,5 +1,4 @@
 # yii2-registerjs
-
 <h2>Default Register JS Yii2</h2>
 <div class="highlight highlight-text-html-php">
   <pre>
