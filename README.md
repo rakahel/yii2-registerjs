@@ -34,7 +34,6 @@
   <pre>
     use \yii\web\View;
     use common\widgets\RegisterJS;
-    
     <?php RegisterJS::begin([
 	'key' => 'alert-js',
 	'position' => $this::POS_READY
