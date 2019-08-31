@@ -3,17 +3,11 @@
 <div class="highlight highlight-text-html-php">
   <pre>
     <?php use  \yii\web\View; ?>
-    .
-    .
-    html code
-    .
-    .
+    // html code
     <?php $this->registerJs('
         alert("Hello World!");
     ');
-    .
-    .
-    other script
+    // other script
   </pre>
 </div>
 
