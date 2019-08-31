@@ -35,16 +35,16 @@
     use \yii\web\View;
     use common\widgets\RegisterJS;
     
-    <span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span></span>
+    &lt;?php
     RegisterJS::begin([
-			'key' => 'alert-js',
-			'position' => $this::POS_READY
-		]);
-    <span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
+	'key' => 'alert-js',
+	'position' => $this::POS_READY
+    ]);
+    php?&gt;
     
     <script type="text/javascript">
-			alert("HelloWorld!");
-		</script>
+	alert("HelloWorld!");
+    </script>
     
     <span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span></span>
     RegisterJS::end();
