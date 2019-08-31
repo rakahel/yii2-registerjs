@@ -24,5 +24,31 @@
 
 <h2>Installation</h2>
 <ol>
-  <li>
+  <li>Download RegisterJS.php</li>
+  <li>put the RegisterJS.php file in the directory "project_name/common/widgets/"</li>
+  <li>call the widget class "use common\widgets\RegisterJS;"
 </ol>
+
+<h2>With RegisterJS.php</h2>
+<div class="highlight highlight-text-html-php">
+  <pre>
+    use \yii\web\View;
+    use common\widgets\RegisterJS;
+    
+    <span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span></span>
+    RegisterJS::begin([
+			'key' => 'alert-js',
+			'position' => $this::POS_READY
+		]);
+    <span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
+    
+    <script type="text/javascript">
+			alert("HelloWorld!");
+		</script>
+    
+    <span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span></span>
+    RegisterJS::end();
+    <span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
+  </pre>
+</div>
+
